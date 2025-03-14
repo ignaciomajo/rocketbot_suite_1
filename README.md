@@ -77,6 +77,11 @@ Si se desea cambiar el numéro de artículos de los cuales queremos extraer info
 *Nota: Mercado Libre muestra un máximo de 58 productos por página. Actualmente, el robot no cuenta con el comando para pasar de página.*
 
 
+![paso_8_iteracion](https://github.com/user-attachments/assets/73a527b8-92b6-45b4-95d3-1fbbfa292d6f)
+
+
+*Nota: El comando que se muestra en la imagen anterior (paso n°8 dentro del ciclo while), esta destinado a modificar la notación del precio ya que mi Excel está en inglés, puedes deshabilitar este comando si tu Excel se cuentra en idioma español.*
+
 ![guardado_archivo](https://github.com/user-attachments/assets/a3f24a06-76ca-4001-926f-4f22606c4ce7)
 
 
@@ -85,6 +90,27 @@ Una vez que el robot haya extraído la información de los artículos delimitado
 *Nota: En caso de recibir un error, revisar el formato en que se ha escrito la ruta donde el robot debe guardar el archivo.*
 
 
-Finalmente el archivo Excel que contiene toda la información extraída quedará guardado en la carpeta **resources** que se encuentra dentro de **main**.
+El archivo Excel que contiene toda la información extraída quedará guardado en la carpeta **resources**📁 que se encuentra dentro de **busqueda_mercadolibre** 📁.
+
+
+Luego, el robot envía un correo con el archivo creado.
+
+**El correo electrónico y la contraseña han sido encriptados para conservar la privacidad de datos sensibles.**
+
+![enviar_correo](https://github.com/user-attachments/assets/9fa8720c-2240-4e5e-91b1-ce065201befc)
+
+Como vemos en esta imagen, primero se realiza la conexión al servidor de Gmail, utilizando las variables `{correo}` y `{pass}` que han sido encriptadas.
+Después de validar que la conexión al servidor ha sido exitosa, se establece en la variable `{subject}` el asunto del correo, que también será utilizada a la hora de leer el correo (se mostrará posteriormente).
+Como último paso de esta sección, se envia el correo al destinatario especificado (en este caso es igual al remitente), con el archivo de los artículos encontrados adjunto.
+
+![listar_correos](https://github.com/user-attachments/assets/d9005be8-561e-4588-95b7-189d4df300f4)
+
+Luego, se esperaran 20 segundos para dar tiempo a que el correo haya llegado, y se creará una carpeta llamada **descargas**📁 dentro de la carpeta **busqueda_mercadolibre**📁 en caso de que esta no exista.
+
+![listar_correos2](https://github.com/user-attachments/assets/a6cfe6fb-25a1-4a8a-8c8a-2777bde4cab0)
+
+Se obtendrán todos los correos no leidos que correspondan al asunto especificado anteriormente, y se iterará uno por uno descargando los archivos dentro de la carpeta que el robot acaba de crear.
+
+Por último, se informa que la descarga fue exitosa, se informa que finaliza el proceso, y se mata el proceso Rocketbot y Excel para evitar procesos zombies.
 
 
