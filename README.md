@@ -13,7 +13,7 @@
 
 ## 1. Descripción del proyecto 📚
 
-Este proyecto mustra tan solo una parte de la capacidad de automatizar un proceso de web scrapping utilizando tencología RPA (Robot Process Automation), en particular **Rocketbot** 🚀. En él, se puede ver como es posible abrir una pagina web y realizar una búsqueda de, en este caso, artículos en la página de Mercado Libre, extrayendo la información relevante que buscamos analizar, como puede ser: criterio de búsqueda, artículos encontrados, precio, descuento que poseen dichos artículos y el link correspondiente para llegar a ellos.
+Este proyecto mustra tan solo una parte de la capacidad de automatizar un proceso de web scrapping utilizando tencología RPA (Robot Process Automation), en particular **Rocketbot** 🚀. En él, se puede ver como es posible abrir una pagina web y realizar una búsqueda de, en este caso, artículos en la página de Mercado Libre, extrayendo la información relevante que buscamos analizar, como puede ser: criterio de búsqueda, artículos encontrados, precio, descuento que poseen dichos artículos y el link correspondiente para llegar a ellos. Finalmente, envia un correo con el archivo generado y luego, lo lee y descarga el archivo en una nueva carpeta.
 
 Resulta importante remarcar que esto es tan solo un ejemplo, ya que es posible extraer cualquier información de un sitio web usando RPA.
 
@@ -22,16 +22,17 @@ Resulta importante remarcar que esto es tan solo un ejemplo, ya que es posible e
 Para obtener el proyecto tienes dos opciones:
 
 1. Clonar el repositorio utilizando la línea de comandos. Solo debes dirigirte al directorio donde deseas clonar el mismo e ingresar el comando:
-   `git clone https://github.com/ignaciomajo/RobotClase2`
+   `git clone https://github.com/ignaciomajo/rocketbot_suite_1`
 
 2. O puedes descargarlo directamente desde el repositorio en GitHub en el siguiente enlace:
    <p><a href="https://github.com/ignaciomajo/rocketbot_suite_1">https://github.com/ignaciomajo/rocketbot_suite_1</p>
 
    Esto te llevará a la siguiente pantalla, donde deberás seguir los siguientes pasos:
    
-
-
 Esto descargará un archivo comprimido `.zip`, que podras alojar en el directorio que desees.
+
+Para utilizarlo, solo debes cargar el archivo `robot.db`📄 a Rocketbot Studio 🚀
+
 
 ## 3. Demostración de funcionalidades y aplicaciones 📝
 
@@ -61,7 +62,7 @@ Una vez aquí solo debemos cambiar el valor que se le asigna a la variable.
 ![abrir_archivo](https://github.com/user-attachments/assets/2e7df83a-72cc-471d-b2c1-81560bde04d5)
 
 
-Una vez que el robot se asegura que ha encontrado la página, intentará buscar el archivo "suplementos_deportivos.xlsx" en la ruta correspondiente, aquí se debera modificar la ruta hacia donde tengamos el robot guardado. Pero es buena práctica dejar el archivo en la carpeta **resources** dentro del main.
+Una vez que el robot se asegura que ha encontrado la página, intentará buscar el archivo "suplementos_deportivos.xlsx" en la ruta correspondiente, aquí se debera modificar la ruta hacia donde tengamos el robot guardado. Pero es buena práctica dejar el archivo en la carpeta **resources**📁 dentro de **busqueda_mercadolibre**📁.
 
 Si este no encuentra un archivo existente, creará uno nuevo con los siguientes encabezados de celda: **id, producto**(correspondiente a la búsqueda realizada), **nombre_articulo, precio**(en pesos), **descuento y link**(correspondiente a dicho artículo).
 
@@ -112,5 +113,31 @@ Luego, se esperaran 20 segundos para dar tiempo a que el correo haya llegado, y 
 Se obtendrán todos los correos no leidos que correspondan al asunto especificado anteriormente, y se iterará uno por uno descargando los archivos dentro de la carpeta que el robot acaba de crear.
 
 Por último, se informa que la descarga fue exitosa, se informa que finaliza el proceso, y se mata el proceso Rocketbot y Excel para evitar procesos zombies.
+
+## 4. Tecnologías utilizadas 🛠️
+
+* `Rocketbot Studio (v.2025.01.06)`
+* `Git and GitHub`
+* `OBS` (screen recorder)
+* `HTML`
+* `Python`
+* `Excel` (requerido para ejecutar el robot)
+
+## 5. Colaboradores del proyecto 🏗️
+
+Quiero agradecer a:
+
+![Rocketbot](https://github.com/user-attachments/assets/5e61e12c-8fe3-4505-8463-0cf648ecda96)
+
+#### Rocketbot
+
+Por desarrollar la herramienta y proveer cursos gratuitos para aprender a utilizarla.
+
+
+## 6. Desarrollador del proyecto 👷
+
+![imagen-readme](https://github.com/user-attachments/assets/133bc743-0424-4120-a7a6-7245d2f28f8c)
+
+**| Ignacio Majo | Data Scientist Junior | Junior RPA Developer |**
 
 
