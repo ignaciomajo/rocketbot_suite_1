@@ -123,7 +123,7 @@ Por último, se informa que la descarga fue exitosa, se informa que finaliza el 
 * `Python`
 * `Excel` (requerido para ejecutar el robot)
 
-## 5. Agradecimientos 🏗️
+## 5. Agradecimientos 🤝
 
 Quiero agradecer a:
 
