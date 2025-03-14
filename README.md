@@ -1,0 +1,1 @@
+# busqueda_mercadolibreEste proyecto se encarga de buscar productos en mercado libre y almacenar los datos relevantes para una campaÃ±a de marketing
