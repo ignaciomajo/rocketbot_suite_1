@@ -1,4 +1,4 @@
-# Rocketbot: busqueda_suplementos_deportivos
+# Rocketbot Suite 1: Búsqueda Mercado Libre
 
 ![rpa_foto_portada](https://github.com/user-attachments/assets/5856b017-6874-4660-8dd6-6d0b7e582bd8)
 
