@@ -8,7 +8,7 @@
 2. Acceso al proyecto
 3. Demostración del funcionalidades y aplicaciones.
 4. Tecnologías utilizadas.
-5. Colaboradores.
+5. Agradecimientos.
 6. Desarrollador del proyecto.
 
 ## 1. Descripción del proyecto 📚
@@ -123,7 +123,7 @@ Por último, se informa que la descarga fue exitosa, se informa que finaliza el 
 * `Python`
 * `Excel` (requerido para ejecutar el robot)
 
-## 5. Colaboradores del proyecto 🏗️
+## 5. Agradecimientos 🏗️
 
 Quiero agradecer a:
 
